@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Stylew.css">
+    <link rel="shortcut icon" href="../img/Orange.png">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="info-div">
+        <div class="info">
+            <img id="orangelogo" src="../img/Orange.png" alt="Orange quiz">
+            <h1 id="name">Welcome "NAME" </h1>
+            <p> Here you will find three parts of quiz, the English quiz designed to assess your understanding of
+                English grammar and phrase, and you will find 5 questions to answer, then you will find the IQ quiz that
+                designed to assess your numerical reasoning, verbal intelligence and spatial intelligence, and you will
+                find 5 questions to answer.
+                at the end you will find the technical skills HTM, CSS and JavaScript. In this test you will find 10
+                questions to answer.
+                You will be required to read each question carefully and select the answer that you think is correct.
+                <br>
+                Get Ready , wish you the best luck.
+            </p>
+        </div>
+        <div class="position">
+            <a href="sasa.html"><button id="sbtn">Start Quiz</button></a>
+
+        </div>
+
+    </div>
+    <script>
+        var id = localStorage.getItem("user_id")
+        var x1 = JSON.parse(localStorage.getItem("users"))
+        if (id) {
+            var a = x1.userdata[id];
+            document.getElementById("name").innerHTML = " Welcome " + a.name;
+        }
+    </script>
+</body>
+
+</html>

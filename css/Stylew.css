@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(255, 224, 213, 0.877);
+    min-height: 100vh;
+
+}
+
+p {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    transition: 0.5s ease;
+    color: orangered;
+}
+
+.position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#sbtn {
+    padding: 25px 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 25px orangered;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#sbtn:hover {
+    background-color: orangered;
+    box-shadow: 0 0 35px orangered;
+    transform: scale(1.2);
+}
+
+@media (max-width: 320px) {
+    #welcome {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        transition: 0.5s ease;
+        font-size: 15px;
+    }
+
+    #orangelogo {
+        margin-top: 10px;
+        margin-left: -65px;
+    }
+
+    #paragraph {
+        margin-top: 50px;
+        font-size: 13px;
+        font-weight: 400
+    }
+
+    .Stylebtn {
+        margin-top: 50px;
+    }
+}
